@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="binary">Binary</string>
+    <string name="decimal">Decimal</string>
+    <string name="btncalcular">Calculate</string>
+    <string name="errornotnum">Please enter a correct number</string>
+    <string name="errorbig">Value is bigger than 10 num</string>
+    <string name="errorbinary">Value isnt binary</string>
+</resources>
