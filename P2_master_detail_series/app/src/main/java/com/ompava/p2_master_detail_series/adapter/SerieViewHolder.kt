@@ -8,23 +8,21 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ompava.p2_master_detail_series.R
+import com.ompava.p2_master_detail_series.databinding.ItemSerieBinding
 import com.ompava.p2_master_detail_series.extesions.setBitmapfromString
 import com.ompava.p2_master_detail_series.model.SerieModel
 
-class SerieViewHolder(view: View): RecyclerView.ViewHolder(view) {
+class SerieViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     //Pinta las celdas/items del listado
 
-    val serieImagen = view.findViewById<ImageView>(R.id.ivSerieImagen)
-    val serieName = view.findViewById<TextView>(R.id.tvSerieName)
-    val serieLanguage = view.findViewById<TextView>(R.id.tvSerieLanguage)
-    val serieRating = view.findViewById<RatingBar>(R.id.rbSerieRating)
+    val binding = ItemSerieBinding.bind(view)
 
-    fun render(Serie: SerieModel, context : Context){
-        serieName.text = Serie.name
-        serieLanguage.text = Serie.language
-        serieRating.rating = Serie.rating/2
-        serieImagen.setBitmapfromString(Serie?.image?:"")
-
+    
+    fun render(Serie: SerieModel, context: Context) {
+        binding.tvSerieName.text = Serie.name
+        binding.tvSerieLanguage.text = Serie.language
+        binding.rbSerieRating.rating = Serie.rating / 2
+        binding.ivSerieImagen.setBitmapfromString(Serie?.image ?: "")
 
 
     }

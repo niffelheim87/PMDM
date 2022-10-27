@@ -10,14 +10,14 @@
         android:id="@+id/recyclerSerie"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.6"
+        android:layout_weight="0.7"
         />
 
     <View
         android:id="@+id/detailSerie"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.4"
+        android:layout_weight="0.3"
         />
 
 
