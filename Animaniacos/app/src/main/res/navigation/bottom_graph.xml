@@ -20,4 +20,19 @@
         android:name="com.ompava.animaniacos.Bottom3Fragment"
         android:label="fragment_bottom3"
         tools:layout="@layout/fragment_bottom3" />
+    <fragment
+        android:id="@+id/options1Fragment"
+        android:name="com.ompava.animaniacos.Options1Fragment"
+        android:label="fragment_options1"
+        tools:layout="@layout/fragment_options1" />
+    <fragment
+        android:id="@+id/options2Fragment"
+        android:name="com.ompava.animaniacos.Options2Fragment"
+        android:label="fragment_options2"
+        tools:layout="@layout/fragment_options2" />
+    <fragment
+        android:id="@+id/options3Fragment"
+        android:name="com.ompava.animaniacos.Options3Fragment"
+        android:label="fragment_options3"
+        tools:layout="@layout/fragment_options3" />
 </navigation>
